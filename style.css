@@ -564,6 +564,9 @@ u > a {
     right: 0;
     left: auto;
   }
+  .progress-bar {
+    display: none;
+  }
   .hero-main {
     bottom: 120px;
   }
