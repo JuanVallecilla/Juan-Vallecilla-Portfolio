@@ -32,22 +32,6 @@ export default class Camera {
       50
     );
 
-    // this.orthographicCamera.position.y = 0;
-    // this.orthographicCamera.position.z = -2.5;
-    // this.orthographicCamera.rotation.x = -Math.PI / 9;
-
-    // this.orthographicCamera.position.y = 2;
-    // this.orthographicCamera.position.z = 2;
-    // this.orthographicCamera.rotation.x = -Math.PI / 6;
-
-    // this.orthographicCamera.position.y = 3;
-    // this.orthographicCamera.position.z = 6;
-    // this.orthographicCamera.rotation.x = -Math.PI / 12;
-
-    // this.orthographicCamera.position.y = 1; // 1
-    // this.orthographicCamera.position.z = 0; // 3
-    // this.orthographicCamera.rotation.x = -Math.PI / 20;
-
     // y = 5.65 original
     this.orthographicCamera.position.y = 4.6;
     this.orthographicCamera.position.z = 8.2;

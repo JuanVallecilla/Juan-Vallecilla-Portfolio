@@ -52,39 +52,12 @@ export default class Room {
         mesh.scale.set(0, 0, 0);
       }
 
-      // if (mesh.name === "Bloops001") {
-      //   mesh.material = new THREE.MeshPhysicalMaterial({
-      //     color: 0xd62932,
-      //     emissive: 0x000000,
-      //     roughness: 0,
-      //     clearcoat: 1,
-      //   });
-      // }
-
-      // mesh.material.roughness = 0;
-      // mesh.material.metalness = 0.375;
-      // mesh.material.color.set(0x4eaee7);
-      // mesh.material.ior = 1;
-      // mesh.material.transmission = 1;
-      // mesh.material.opacity = 1;
-      // }
-
       // console.log(mesh);
       if (mesh.name === "wideScreen") {
         mesh.children[0].material = new THREE.MeshBasicMaterial({
           map: this.resources.items.screen,
         });
       }
-      // if (mesh.name === "Console") {
-      //   mesh.scale.set(0, 0, 0);
-      // }
-      // if (mesh.name === "Plane005") {
-      //   mesh.scale.set(0, 0, 0);
-      // }
-
-      // if (mesh.name === "Circle004") {
-      //   console.log(mesh);
-      // }
 
       // ----------------------------SEETING mesh SCALE TO 0 TO SEE CUBE
       mesh.scale.set(0, 0, 0);
@@ -96,40 +69,6 @@ export default class Room {
       this.roomChildren[mesh.name] = mesh;
     });
 
-    // const lampLight = new THREE.PointLight(0xff7b19, 0, 0);
-    // lampLight.name = "lampLight";
-    // lampLight.position.set(-4.45, 9.35, -7.5); // z:8.61693 y: 10.5677
-
-    // const a = "nightTime";
-    // this.lampLight[a] = 0.5;
-    // this.lampLight.rotation.y = Math.PI / 4;
-
-    // x: 9.51551
-    // y: 7.73494 m
-    // z: 3.17593 m
-    // const lavaLight = new THREE.PointLight(0x4eaee7, 0, 0);
-    // lavaLight.name = "lavaLight";
-    // lavaLight.position.set(8.6, 7.3, -2.5);
-
-    // this.rectLight = new THREE.RectAreaLight(0xffffff, 0, 0.1, 0.1);
-    // this.rectLight.position.set(0.09485217928886414, 1, 7.753444194793701);
-    // this.rectLight.rotation.x = -Math.PI / 2;
-
-    // this.lampLight.intensity = this.lights.lampLight;
-
-    // this.actualRoom.add(this.lavaLight);
-    // this.actualRoom.add(this.rectLight);
-
-    // const rectLightHelper = new RectAreaLightHelper(rectLight);
-    // rectLight.add(rectLightHelper);
-
-    // this.pointLightHelper = new PointLightHelper(this.lampLight, 1);
-    // this.lampLight.add(this.pointLightHelper);
-
-    // this.pointLightHelper = new PointLightHelper(this.lavaLight, 1);
-    // this.lavaLight.add(this.pointLightHelper);
-    // this.roomChildren["lampLight"] = lampLight;
-    // this.roomChildren["lavaLight"] = lavaLight;
     this.scene.add(this.actualRoom);
     this.actualRoom.attach(lampLight);
     this.actualRoom.attach(lavaLight);
@@ -138,8 +77,6 @@ export default class Room {
 
   setAnimation() {
     this.mixer = new THREE.AnimationMixer(this.actualRoom);
-    //this.mixerPlane = new THREE.AnimationMixer(this.actualRoom);
-    //this.plane = this.mixerPlane.clipAction(this.room.animations[1]);
 
     this.lamp = this.mixer.clipAction(this.room.animations[0]);
     this.terrain = this.mixer.clipAction(this.room.animations[1]);
@@ -148,8 +85,6 @@ export default class Room {
     this.lamp.play();
     this.terrain.play();
     this.spaceShip.play();
-
-    // console.log(this.room);
   }
 
   onMouseMovement() {

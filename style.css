@@ -332,15 +332,6 @@ svg {
   font-family: "Source Code Pro", monospace;
 }
 
-/* .section-intro-wrapper {
-  position: absolute;
-  width: 100%;
-  min-width: 800px;
-  text-align: center;
-  top: 50%;
-  margin-top: -55px;
-} */
-
 #section-title {
   transform: matrix(1, -0.2, 0, 1, 0, 0);
   -ms-transform: matrix(1, -0.2, 0, 1, 0, 0);
@@ -355,50 +346,6 @@ svg {
   color: var(--color-text);
   text-shadow: 4px 5px var(--color-shadow), 6px 7px var(--color-shadow-outline);
 }
-
-/* .section-intro-wrapper > h1 {
-  text-transform: uppercase;
-  transform: translate(-50%, -50%) skew(10deg) rotate(-10deg);
-  font-size: 10vw;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  text-rendering: optimizeLegibility;
-  font-weight: 700;
-  color: rgba(255, 158, 177, 0.5);
-  text-shadow: 1px 4px 6px, 0 0 0 #66303a, 1px 4px 6px;
-  white-space: nowrap;
-}
-
-.section-intro-wrapper > h1:before {
-  content: attr(data-heading);
-  position: absolute;
-  left: 0;
-  top: -5%;
-  overflow: hidden;
-  width: 100%;
-  height: 50%;
-  color: #fbf7f4;
-  transform: translate(0.85vw) skew(-13deg) scale(1, 1.22);
-  z-index: 2;
-  text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
-}
-
-.section-intro-wrapper > h1:after {
-  content: attr(data-heading);
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  color: #e7e5e4;
-  transform: translate(0vw) skew(13deg) scale(1, 0.8);
-  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-  text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.1);
-} */
 
 .section-detail-wrapper {
   position: relative;
@@ -648,10 +595,4 @@ u > a {
   .name {
     margin-top: 20px;
   }
-
-  /* .socials > a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 }
