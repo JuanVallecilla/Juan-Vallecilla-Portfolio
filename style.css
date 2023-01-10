@@ -435,8 +435,8 @@ div > a {
 .contact {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+  justify-content: center;
+  /* flex-direction: row; */
   margin: 48px 0px;
 }
 
@@ -445,7 +445,8 @@ div > a {
 }
 
 .contact-name {
-  margin: 0px 30px;
+  margin-left: 30px;
+  text-align: center;
 }
 
 .name {
