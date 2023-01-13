@@ -1,7 +1,7 @@
 # Juan-Vallecilla-Portfolio
-Created using THREE.JS, Javascript, HTML and css I create a 3D portfolio of a representation of my room.
+Created using THREE.JS, Javascript, HTML, CSS and Blender to create a 3D portfolio that represents my room.
 
-Creating this website I learn Blender to create my own 3D assets and THREE.JS to display the models on the browser. I also learn GSAP to create animation using my model.
+Creating this website I learned Blender to create my own 3D assets, THREE.JS to display the models on the browser and GSAP to create animation using my model.
 
 the live version can be view here: https://www.juanvallecilla.ca/
 
